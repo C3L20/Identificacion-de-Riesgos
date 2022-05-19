@@ -5,23 +5,20 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import lombok.Getter;
-import lombok.Setter;
-
 @Entity
 @Table(name = "users")
 public class UserMdl {
     
     @Id
-    @Getter @Setter @Column(name = "rut", nullable = false) 
+    @Column(name = "rut", nullable = false) 
     private String rut;
-    @Getter @Setter @Column(name = "email", nullable = false)
+    @Column(name = "email", nullable = false)
     private String email;
-    @Getter @Setter @Column(name = "nombre", nullable = false)
+    @Column(name = "nombre", nullable = false)
     private String nombre;
-    @Getter @Setter @Column(name = "contrasena", nullable = false)
+    @Column(name = "contrasena", nullable = false)
     private String contrasena;
-    @Getter @Setter @Column(name = "telefono", nullable = false)
+    @Column(name = "telefono", nullable = false)
     private String telefono;
 
     public UserMdl() {
@@ -33,4 +30,35 @@ public class UserMdl {
         this.contrasena = contrasena;
         this.telefono = telefono;
     }
+    public String getRut() {
+        return rut;
+    }
+    public void setRut(String rut) {
+        this.rut = rut;
+    }
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    public String getNombre() {
+        return nombre;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    public String getContrasena() {
+        return contrasena;
+    }
+    public void setContrasena(String contrasena) {
+        this.contrasena = contrasena;
+    }
+    public String getTelefono() {
+        return telefono;
+    }
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
 }

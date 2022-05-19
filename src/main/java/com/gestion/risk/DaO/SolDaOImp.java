@@ -22,5 +22,10 @@ public class SolDaOImp implements SolDaO{
         String query = "FROM SolMitgMdl";
         return entityManager.createQuery(query, SolMitgMdl.class).getResultList();
     }
+
+    @Override
+    public void registrarSol(SolMitgMdl sol) {
+        entityManager.merge(sol);
+    }
     
 }

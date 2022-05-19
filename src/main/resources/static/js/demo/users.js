@@ -16,8 +16,7 @@ async function loadUsers() {
       +user.nombre+'</td><td>'
       +user.rut+'</td><td>'
       +user.email+'</td><td>'
-      +user.telefono+'</td><td>'
-      +user.contrasena+'</td><td><a href="#" onclick="eliminarUser('+user.rut+')" method="DELETE" class="btn btn-danger btn-circle"><i class="fas fa-trash"></i></a></td></tr>';
+      +user.telefono+'</td><td><a href="#" onclick="eliminarUser('+user.rut+')" method="DELETE" class="btn btn-danger btn-circle"><i class="fas fa-trash"></i></a></td></tr>';
       
     usersHTML += userHTML;
   }

@@ -7,5 +7,7 @@ import com.gestion.risk.model.SolMitgMdl;
 public interface SolDaO {
 
     List<SolMitgMdl> getSoluciones();
+
+    void registrarSol(SolMitgMdl sol);
     
 }

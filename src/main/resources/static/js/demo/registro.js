@@ -19,6 +19,7 @@ async function registrarUser() {
         body: JSON.stringify(datos)
     });
     alert("Se registro con exito!");
+    window.location.href("login.html");
 }
 
 function getHeaders() {
